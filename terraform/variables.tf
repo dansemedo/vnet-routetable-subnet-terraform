@@ -31,3 +31,62 @@ variable "tenant_id" {
     type        = "string"
     description = "Azure tenant or directory id"
 }
+
+
+#VNET 1 Variables
+
+
+variable "vnet1_name" {
+    type        = "string"
+    description = "Azure Vnet 1 Name"
+}
+
+
+#VNET 2 Variables
+
+
+variable "vnet2_name" {
+    type        = "string"
+    description = "Azure Vnet 2 Name"
+}
+
+
+#Route Table Variables
+
+
+variable "route_table_name" {
+    type        = "string"
+    description = "Azure Route Table Name"
+}
+
+#Subnet1 Variables
+
+
+variable "subnet1_name" {
+    type        = "string"
+    description = "Subnet1 Name"
+}
+
+#Subnet2 Variables
+
+
+variable "subnet2_name" {
+    type        = "string"
+    description = "Subnet2 Name"
+}
+
+#VNET Peer 1 Variables
+
+
+variable "vnetpeer1_name" {
+    type        = "string"
+    description = "VNet peer1 Name"
+}
+
+#VNET Peer 2 Variables
+
+
+variable "vnetpeer2_name" {
+    type        = "string"
+    description = "VNet peer2 Name"
+}
