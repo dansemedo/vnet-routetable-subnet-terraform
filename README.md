@@ -10,9 +10,9 @@ Run in the command line the command below (make sure you have the latest Terrafo
 
 terraform --version 
 
-terraform plan
+terraform plan -var-file="secrets.tfvars"
 
-terraform apply
+terraform apply -var-file="secrets.tfvars"
 
 ### How to configure Azure Active Directory and RBAC permissions on AKS
 
