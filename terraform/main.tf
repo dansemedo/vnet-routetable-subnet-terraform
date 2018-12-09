@@ -51,7 +51,7 @@ resource "azurerm_subnet" "subnet1" {
   virtual_network_name = "${azurerm_virtual_network.vnet1.name}"
   resource_group_name  = "${azurerm_resource_group.cgrg.name}"
   route_table_id	     = "${azurerm_route_table.rt.id}"
-  address_prefix       = "10.0.2.0/24"
+  address_prefix       = "10.0.1.0/24"
 }
 
 output "subnet_id_1" {
@@ -66,7 +66,7 @@ resource "azurerm_subnet_route_table_association" "subnetroute1" {
 #Subnet Config 2
 
 resource "azurerm_subnet" "subnet2" {
-  name                 = "backend"
+  name                 = "frontend"
   virtual_network_name = "${azurerm_virtual_network.vnet2.name}"
   resource_group_name  = "${azurerm_resource_group.cgrg.name}"
   route_table_id       = "${azurerm_route_table.rt.id}"
