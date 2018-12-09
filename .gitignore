@@ -8,3 +8,4 @@
 # .tfvars files
 #*.tfvars
 terraform/.vscode/settings.json
+terraform/secrets.tfvars
